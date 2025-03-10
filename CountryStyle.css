@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --background-color: #fff;
+    --text-color: rgba(0, 0, 0, 0.817);
+    --elements-color: #fff
+    
+}
+
+body.dark {
+    --background-color: black;
+    --text-color: #fff;
+    --elements-color:rgba(22, 33, 35, 0.911);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* ///  Header component */
+header {
+    --background-color: #fff;
+    --text-color: rgba(0, 0, 0, 0.817);
+    --elements-color: #fff;
+    box-shadow: 0 2px  4px rgba(0, 0, 0, 0.3);
+    background-color: var(--elements-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 2px;
+    z-index: 2;
+}
+
+header.dark {
+    --background-color: rgb(58, 59, 59);
+    --text-color: #fff;
+    --elements-color:rgba(22, 33, 35, 0.911);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(247, 240, 240, 0.3);
+}
+
+
+header .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 3rem;
+    position: sticky;
+    margin-top: 2px;
+   
+
+}
+
+
+
+
+/* /// Search component & select component*/
+
+main.dark{
+    --background-color: rgb(58, 59, 59);
+    --text-color: #fff;
+    --elements-color:rgba(22, 33, 35, 0.911);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: calc(100vh - 7vh);
+}
+
+
+.searchSelectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  
+    
+}
+.searchCountainer, .selectContainer {
+    max-width: 250px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px  4px rgba(0, 0, 0, 0.3);
+    background-color: var(--elements-color);
+    padding-inline: 1rem;
+    margin: 0 1rem;
+
+}
+
+.searchCountainer .searchInput, .selectContainer{
+    border: none;
+    outline: none;
+    padding-inline: 8px;
+    color:  var(--text-color);
+    background-color:var(--elements-color);
+
+}
+
+
+
+
+
+/* /// card component */
+
+.CountryListContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem 1rem 1rem;
+}
+
+.card {
+    width: 250px;
+    min-height: 300px;
+    box-shadow: 0 2px  4px rgba(0, 0, 0, 0.3);
+    font-family: 'poppins';
+    font-weight: 300;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: scale 0.1s;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--elements-color);
+
+    
+    
+}
+
+.card:hover{
+    scale: 1.03;
+    transition: scale 0.1s;
+}
+
+.card .imgContainer img {
+    width: 100%;
+}
+
+
+.card .textContent {
+    padding: 8px;
+}
+
+
+/* //// shimmer */
+
+.shimmer {
+    background-color:  var(--elements-color);
+}

@@ -1,0 +1,290 @@
+/* render multiple element */
+/* .card {
+    max-width: 150px;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3,p {
+    margin: 6px 0;
+}
+
+.card .card-content {
+    padding-inline: 6px ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+} */
+
+/* how to use image in react ? ****** */
+
+.img-container {
+  max-width: 100px;
+}
+
+.img-container img {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.Apple-container {
+  max-width: 800px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  max-width: 80px;
+  height: 50px;
+}
+
+.button img {
+  width: 100%;
+}
+
+/* //// button component */
+
+/* variables */
+
+* {
+  /* var color */
+  --blue: #3c7bff;
+  --white: #fff;
+
+  /* var height-width */
+  --one: 1px;
+  --ten: 10px;
+  --twenty: 20px;
+  --sixteen: 16px;
+  --twenty4: 24px;
+  --twenty6: 26px;
+  --twenty8: 28px;
+  --thirty: 30px;
+  --forty: 40px;
+  --forty5: 45px;
+  --forty_5: -45px;
+  --three_hundred: 300px;
+  --four_hundred: 400px;
+
+  /* height width var percent */
+  --percent100: 100%;
+  --height100_percent: 100%;
+
+  /* var padding */
+  --padding10_5: 10px 5px;
+  --padding8_20: 8px 20px;
+  --padding_vertical: 10px;
+
+  /* var flex */
+  --flex: flex;
+  --items_center: center;
+  --justify: center;
+  --between: space-between;
+
+  /* var border */
+  --border_none: none;
+  --border1: 1px solid gray;
+
+  /* var radius */
+  --radius26: 26px;
+  --radius30: 30px;
+
+  /* var font */
+  --font_bold: bold;
+
+  /* var shadow */
+  --shadow4_4_8: 4px 4px 8px #0003, 0px 0px 0.8px #0003;
+
+  --outline_none: none;
+}
+
+.flexAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.componentContainer {
+  max-width: 900px;
+  min-height: 700px;
+  width: 100%;
+  margin-inline: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px black;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+* inputs {
+  border: none;
+  border-radius: 45px;
+  outline: none;
+  height: 45px;
+  box-shadow: var(--shadow4_4_8);
+  font-size: 20px;
+  padding-left: 23px;
+  padding-right: 50px;
+}
+
+.circle {
+  border-radius: var(--forty5);
+  width: var(--forty5);
+  height: var(--forty5);
+  margin-left: var(--forty_5);
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.circle:hover {
+  background-color: rgba(32, 18, 18, 0.1);
+}
+
+.circle:active {
+  background-color: rgba(49, 28, 28, 0.363);
+  transition: background 0.1s;
+}
+
+.inputCircle {
+  display: flex;
+}
+
+/* universal */
+
+/* universal input */
+
+* input {
+  border-radius: var(--four_hundred);
+  padding: var(--padding10_5);
+  font-size: var(--sixteen);
+  border: var(--border1);
+  outline: var(--outline_none);
+  letter-spacing: var(--one);
+}
+
+.itags {
+  width: var(--forty);
+  height: var(--forty);
+  font-size: var(--twenty4);
+  border-radius: var(--three_hundred);
+  display: var(--flex);
+  align-items: var(--items_center);
+  justify-content: var(--justify);
+  font-weight: var(--font_bold);
+  cursor: pointer;
+  user-select: none;
+}
+
+.itags:hover {
+  background-color: rgba(56, 51, 51, 0.07);
+}
+
+.itags:active {
+  background-color: rgba(56, 51, 51, 0.2);
+}
+
+/* universal button  */
+
+* button {
+  background-color: var(--blue);
+  padding: var(--padding8_20);
+  font-size: var(--twenty);
+  border-radius: var(--three_hundred);
+  border: var(--border_none);
+  outline: var(--outline_none);
+  letter-spacing: var(--one);
+  color: var(--white);
+}
+
+* button:hover {
+  filter: brightness(1.3);
+}
+
+* button:active {
+  filter: brightness(0.9);
+  transition: filter 0.1s;
+}
+
+/* universal card  */
+
+.card2 {
+  min-width: var(--four_hundred);
+  min-height: var(--four_hundred);
+  box-shadow: var(--shadow4_4_8);
+  border-radius: var(--ten);
+}
+
+/* parts  */
+
+/* inputComponent */
+
+.input_Component_Container {
+  padding: var(--padding10_5);
+}
+
+.input_Container {
+  width: max-content;
+  height: max-content;
+  border-radius: var(--four_hundred);
+  display: var(--flex);
+  align-items: var(--items_center);
+  box-shadow: var(--shadow4_4_8);
+}
+
+.input_Container input {
+  border: var(--border_none);
+}
+
+.component_Input_Padding {
+  padding-left: var(--sixteen);
+}
+
+/* card3 comp */
+
+.card3_Container.active {
+  width: 0;
+  transition: width 2s ease-in-out;
+}
+.card3_Container {
+  width: var(--four_hundred);
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  overflow: hidden;
+  transition: width 2s ease-in-out;
+}
+
+.card3 {
+  max-width: var(--three_hundred);
+  min-height: var(--four_hundred);
+  box-shadow: var(--shadow4_4_8);
+  border-radius: var(--ten);
+  overflow: hidden;
+}
+
+.card3 .img_Container img {
+  width: 100%;
+}
+
+.card3 .text_Container {
+  padding: var(--padding10_5);
+}
+
+.card3 .btn_Container {
+  display: var(--flex);
+  justify-content: var(--between);
+}
