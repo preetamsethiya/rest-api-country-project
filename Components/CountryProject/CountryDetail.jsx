@@ -80,17 +80,17 @@ export default function CountryDetail() {
           ))}
       </div>
 
-      <div className="componentContainer">
+      {/* <div className="componentContainer">
         <div className="inputCircle">
           <input type="text" />
           <div className="circle flexAll">&times;</div>
-        </div>
+        </div> */}
 
-        {/* parts */}
+      {/* parts */}
 
-        <Input />
-        <Button />
-        <div className="card3_Container">
+      {/* <Input /> */}
+      {/* <Button /> */}
+      {/* <div className="card3_Container">
           <div className="card3">
             <div className="img_Container">
               <img src={rohit02} alt={rohit02} />
@@ -117,8 +117,8 @@ export default function CountryDetail() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </>
   );
 }
