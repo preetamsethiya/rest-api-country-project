@@ -87,6 +87,7 @@ export default function CountryDetail() {
         </div> */}
 
       {/* parts */}
+      {/* parts */}
 
       {/* <Input /> */}
       {/* <Button /> */}
